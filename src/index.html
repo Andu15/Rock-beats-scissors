@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock paper scissors</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+  <main class="main">
+    <h1 class="title">PIEDRA, PAPEL O TIJERA</h1>
+    <section>
+      <p class="description">El juego acaba cuando el jugador o la pc obtengan un puntaje de 2 pts</p>
+      <div class="button-section">
+        <div class="rock-btn">
+          <button type="button" name="rock" class="btn primary">
+            <img src="assets/svg/rockWithoutBg.svg" alt="rock image" class="img-btn" name="rock"/>
+          </button>
+          <p class="white">Piedra</p>
+        </div>
+        <div class="paper-btn">
+          <button type="button" name="paper" class="btn secondary">
+            <img src="assets/svg/paperWithoutBg.svg" alt="paper image" class="img-btn" name="paper"/>
+          </button>
+          <p class="white">Papel</p>
+        </div>
+        <div class="scissors-btn">
+          <button type="button" name="scissors" class="btn tertiary">
+            <img src="assets/svg/scissorWithoutBg.svg" alt="scissors image" class="img-btn" name="scissors"/>
+          </button>
+          <p class="white">Tijera</p>
+        </div>
+      </div>
+    </section>
+    <section class="score-section">
+      <div>
+        <ul>
+          <li class="score">Vencidas: <span id="wins-item">0</span></li>
+          <li class="score">Perdidas: <span id="losts-item">0</span></li>
+          <li class="score">Empate: <span id="tie-item">0</span></li>
+        </ul>
+      </div>
+      <span id="result" class="white result"></span>
+    </section>
+    <section class="play-section">
+      <div class="set-of-cards">
+        <img id="card-left" class="card left"/>
+        <img id="card-right" class="card right"/>
+      </div>
+      <div class="versus-section">
+        <img src="assets/images/versus.png" alt="versus image" class="versus-img"/>
+      </div>
+    </section>
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
