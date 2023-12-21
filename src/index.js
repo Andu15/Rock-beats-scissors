@@ -88,7 +88,7 @@ function assignResult () {
   }
 }
 function assignScore () {
-  switch (outcome) {
+  switch (outcome.trim()) {
     case 'Ganaste':
       wins += 1;
       break;
@@ -99,7 +99,7 @@ function assignScore () {
       tie += 1;
       break;
     default:
-      console.log("fue empate, no se hace nada")
+      console.log("Es un error, no debe ingresar aqui")
   }
 }
 function showResult () {
