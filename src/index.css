@@ -128,6 +128,7 @@ h1 {
 .left {
   transform: matrix(0.95, -0.4, 0.29, 0.93, 0, 0);
   border: 5px solid var(--primary-color);
+  background-color: var(--primary-color);
 }
 .right {
   border: 5px solid var(--background-dark-color);
@@ -156,7 +157,6 @@ h1 {
     bottom: 6.1em;
   }
 }
-
 @media (min-width: 500px) {
   .button-section {
     grid-template-columns: repeat(3, 94px);
@@ -166,7 +166,6 @@ h1 {
     margin: 3em 0 2em 0;
   }
 }
-
 @media (min-width: 600px) {
   .title {
     margin: 1em 0;
@@ -201,26 +200,22 @@ h1 {
     bottom: 8.1em;
   }
 }
-
 @media (min-width: 700px) {
   .card {
     height: 233px;
   }
 }
-
 @media (min-width: 800px) {
   .versus-img {
     bottom: 9.1em;
   }
 }
-
 @media (min-width: 875px) {
  .main {
   width: 80vw;
   margin: auto;
  }
 }
-
 @media (min-width: 1000px) {
   .main {
    width: 90vw;
@@ -284,48 +279,41 @@ h1 {
     text-align: center;
     left: 3em;
   }
- } 
-
+} 
 @media (min-width: 1100px) {
   .versus-img {
     text-align: center;
     left: 30%;
   }
- }
-
- @media (min-width: 1300px) {
+}
+@media (min-width: 1300px) {
   .versus-img {
     text-align: center;
     left: 80%;
     bottom: 3em;
     height: 150px;
   }
- }
-
- @media (min-width: 1400px) {
+}
+@media (min-width: 1400px) {
   .main {
     width: 82vw;
   }
- }
-
+}
  @media (min-width: 1550px) {
   .main {
     width: 76vw;
   }
- }
-
+}
  @media (min-width: 1670px) {
   .versus-img {
     height: 160px;
   }
- }
-
+}
  @media (min-width: 1780px) {
   .versus-img {
     left: 13em;
   }
- }
-
+}
  @media (min-width: 1940px) {
   .title {
     font-size: var(--font-size-lg);
@@ -361,20 +349,17 @@ h1 {
   .white {
     font-size: var(--font-size-md);
   }
- }
-
+}
 @media (min-width: 2120px) {
   .versus-img {
     left: 16em;
   }
 }
-
 @media (min-width: 2300px) {
   .versus-img {
     left: 18em;
   }
 }
-
 @media (min-width: 2500px) {
   .versus-img {
     left: 20em;
