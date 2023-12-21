@@ -111,6 +111,9 @@ h1 {
   word-wrap: break-word;
   font-size: var(--font-size-sm);
   margin: 0 1em;
+  background-color: var(--background-dark-color);
+  /* padding: var(--font-size-xs); */
+  border-radius: 10px;
 }
 
 .play-section {
