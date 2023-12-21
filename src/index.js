@@ -17,14 +17,14 @@ for (const button of buttons) {
   button.addEventListener('click', play);
 }
 
-function clearVariables(){
-  player = 0;
-  pc = 0;
-  wins = 0;
-  losts = 0;
-  tie = 0;
-  outcome = '';
-}
+// function clearVariables(){
+//   player = 0;
+//   pc = 0;
+//   wins = 0;
+//   losts = 0;
+//   tie = 0;
+//   outcome = '';
+// }
 function chooseUserOption (element) {
   let { name } = element;
   switch (name) {
@@ -124,12 +124,16 @@ function asignScoreInScreen(){
 }
 
 function play (e) {
-    chooseUserOption(e.target);
-    assignUserPicture();
-    choosePcOption();
-    assignPcPicture();
-    assignResult();
-    assignScore();
-    showResult();
-    asignScoreInScreen();
+    if(wins < 3 && losts < 3){
+      chooseUserOption(e.target);
+      assignUserPicture();
+      choosePcOption();
+      assignPcPicture();
+      assignResult();
+      assignScore();
+      showResult();
+      asignScoreInScreen();
+    }else{
+      result.innerText = `Terminaste el juego con ${wins} puntos`
+    }
 }
