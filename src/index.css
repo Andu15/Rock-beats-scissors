@@ -110,10 +110,12 @@ h1 {
   align-self: center;
   word-wrap: break-word;
   font-size: var(--font-size-sm);
-  margin: 0 1em;
+  margin: 2rem auto;
   background-color: var(--background-dark-color);
-  /* padding: var(--font-size-xs); */
   border-radius: 10px;
+  text-align: center;
+  padding: var(--font-size-xs);
+  width: 50%;
 }
 
 .play-section {
