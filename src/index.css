@@ -96,7 +96,7 @@ h1 {
 .score-section {
   margin: 5em 0 1em 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   font-size: var(--font-size-sm);
   justify-items: center;
   align-items: center;
