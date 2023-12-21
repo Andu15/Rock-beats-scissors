@@ -109,6 +109,11 @@ function showResult () {
     result.innerText = `¡Empataste esta vez!`
   }
 }
+function asignScoreInScreen(){
+  winsItem.innerText = wins;
+  lostsItem.innerText = losts;
+  tieItem.innerText = tie;
+}
 
 function play (e) {
   chooseUserOption(e.target);
@@ -118,8 +123,5 @@ function play (e) {
   assignResult();
   assignScore();
   showResult();
-
-  winsItem.innerText = wins;
-  lostsItem.innerText = losts;
-  tieItem.innerText = tie;
+  asignScoreInScreen();
 }
