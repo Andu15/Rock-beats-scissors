@@ -6,8 +6,8 @@ const result = document.getElementById('result');
 const cardLeft = document.getElementById('card-left');
 const cardRight = document.getElementById('card-right');
 
-let player;
-let pc;
+let player = 0;
+let pc = 0;
 let wins = 0;
 let losts = 0;
 let tie = 0;
@@ -33,7 +33,6 @@ function chooseUserOption (element) {
       player = 0;
   }
 }
-
 function assignUserPicture () {
   let image;
   let bgColor;
@@ -56,12 +55,10 @@ function assignUserPicture () {
   cardLeft.src = image;
   cardLeft.style.backgroundColor = bgColor;
 }
-
 function choosePcOption () {
   const random = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
   pc = random(1, 3);
 }
-
 function assignPcPicture () {
   let image;
   switch (pc) {
@@ -79,17 +76,17 @@ function assignPcPicture () {
   }
   cardRight.src = image;
 }
-
 function assignResult () {
-  if (player === pc) {
+  if(player === pc){
     outcome = 'Empate';
-  } else if (player == 1 && pc == 3 || player == 2 && pc == 1 || player == 3 && pc == 2) {
+  } else if(player > pc){
     outcome = 'Ganaste';
-  } else {
+  } else if(player < pc){
     outcome = 'Perdiste';
+  } else {
+    outcome = 'Existe un error';
   }
 }
-
 function assignScore () {
   switch (outcome) {
     case 'Ganaste':
@@ -105,7 +102,6 @@ function assignScore () {
       console.log("fue empate, no se hace nada")
   }
 }
-
 function showResult () {
   if (outcome !== 'Empate') {
     result.innerText = `¡${outcome} esta partida!`
